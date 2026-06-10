@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Axion Drain Cleaning | Vancouver & Lower Mainland | 24/7 Emergency Service</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#0D1B2A;--navy-mid:#152638;--orange:#F5720A;--orange-dark:#D4610A;--blue:#1B9AAA;--off-white:#F8F6F2;--slate:#4A5568;--slate-light:#718096;--white:#ffffff}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--off-white);color:var(--navy);overflow-x:hidden}
+.sticky-bar{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(13,27,42,0.97);backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:space-between;padding:0 28px;height:60px;box-shadow:0 2px 24px rgba(0,0,0,0.4)}
+.logo-sm{font-family:'Oswald',sans-serif;font-size:1.1rem;font-weight:700;color:var(--white);letter-spacing:0.05em}
+.logo-sm span{color:var(--orange)}
+.bar-right{display:flex;align-items:center;gap:16px}
+.bar-emg{font-size:0.7rem;color:var(--blue);font-weight:600;letter-spacing:0.1em;text-transform:uppercase;animation:blink 2s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.5}}
+.btn-bar{background:var(--orange);color:var(--white);font-family:'Oswald',sans-serif;font-size:0.9rem;font-weight:600;letter-spacing:0.06em;padding:9px 20px;border-radius:4px;text-decoration:none;transition:background 0.2s}
+.btn-bar:hover{background:var(--orange-dark)}
+@media(max-width:480px){.bar-emg{display:none}}
+.hero{min-height:100vh;padding-top:60px;position:relative;overflow:hidden;display:flex;align-items:center}
+.hero-bg{position:absolute;inset:0;background-image:url('https://d8j0ntlcm91z4.cloudfront.net/user_3Ehhy1xNiVdv0yglQJ2f6cyCQrL/hf_20260610_064529_198b6e5d-31ea-4231-80c0-d1f7fc53bc8e.png');background-size:cover;background-position:center top;filter:brightness(0.25)}
+.hero-ov{position:absolute;inset:0;background:linear-gradient(135deg,rgba(13,27,42,0.97) 0%,rgba(13,27,42,0.75) 55%,rgba(245,114,10,0.12) 100%)}
+.pipe-lines{position:absolute;inset:0;pointer-events:none}
+.pl{position:absolute;height:1px;width:200%;background:linear-gradient(90deg,transparent,rgba(27,154,170,0.14),transparent);animation:flow 5s linear infinite}
+.pl:nth-child(1){top:18%;animation-duration:6s;animation-delay:0s}
+.pl:nth-child(2){top:40%;animation-duration:4.5s;animation-delay:1.5s}
+.pl:nth-child(3){top:65%;animation-duration:5.5s;animation-delay:0.8s}
+.pl:nth-child(4){top:83%;animation-duration:4s;animation-delay:2.2s}
+@keyframes flow{from{transform:translateX(-50%)}to{transform:translateX(0%)}}
+.hero-inner{position:relative;z-index:2;max-width:1200px;margin:0 auto;padding:80px 28px;display:grid;grid-template-columns:1fr;gap:48px;align-items:center}
+@media(min-width:820px){.hero-inner{grid-template-columns:1.15fr 0.85fr;padding:100px 40px}}
+.hero-eyebrow{font-family:'Oswald',sans-serif;font-size:0.72rem;letter-spacing:0.24em;color:var(--blue);text-transform:uppercase;margin-bottom:18px}
+.hero-h1{font-family:'Oswald',sans-serif;font-size:clamp(3.2rem,8vw,5.8rem);font-weight:700;color:var(--white);line-height:0.93;margin-bottom:26px}
+.hero-h1 .acc{color:var(--orange)}
+.hero-sub{font-size:1.05rem;line-height:1.78;color:rgba(255,255,255,0.68);max-width:480px;margin-bottom:36px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:48px}
+.btn-p{background:var(--orange);color:var(--white);font-family:'Oswald',sans-serif;font-size:1rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:15px 30px;border-radius:5px;text-decoration:none;transition:background 0.2s,transform 0.15s;display:inline-block}
+.btn-p:hover{background:var(--orange-dark);transform:translateY(-2px)}
+.btn-s{background:transparent;color:var(--white);font-family:'Oswald',sans-serif;font-size:1rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;padding:15px 30px;border-radius:5px;text-decoration:none;border:1.5px solid rgba(255,255,255,0.28);transition:all 0.2s}
+.btn-s:hover{border-color:var(--blue);background:rgba(27,154,170,0.1)}
+.hero-stats{display:flex;gap:36px;flex-wrap:wrap}
+.stn{font-family:'Oswald',sans-serif;font-size:2rem;font-weight:700;color:var(--orange);line-height:1}
+.stl{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.38);margin-top:4px}
+.hero-card{background:rgba(255,255,255,0.05);border:1px solid rgba(27,154,170,0.22);border-radius:14px;overflow:hidden;backdrop-filter:blur(8px)}
+.hero-card img{width:100%;height:220px;object-fit:cover;display:block}
+.hcb{padding:24px}
+.hc-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(27,154,170,0.18);border:1px solid rgba(27,154,170,0.38);color:var(--blue);font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:5px 12px;border-radius:20px;margin-bottom:14px}
+.hc-dot{width:7px;height:7px;border-radius:50%;background:var(--blue);animation:pulse 1.5s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(27,154,170,0.5)}50%{box-shadow:0 0 0 6px rgba(27,154,170,0)}}
+.hcb h3{font-family:'Oswald',sans-serif;font-size:1.05rem;font-weight:600;color:var(--white);margin-bottom:14px}
+.hc-list{display:flex;flex-direction:column;gap:9px}
+.hc-item{display:flex;align-items:center;gap:8px;font-size:0.84rem;color:rgba(255,255,255,0.68)}
+.hc-d{width:6px;height:6px;border-radius:50%;background:var(--orange);flex-shrink:0}
+.trust-bar{background:var(--orange);padding:13px 24px}
+.trust-inner{max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:center;gap:18px 34px}
+.ti{display:flex;align-items:center;gap:7px;font-family:'Oswald',sans-serif;font-size:0.86rem;font-weight:500;letter-spacing:0.06em;color:var(--white);text-transform:uppercase}
+section{padding:80px 24px}
+.si{max-width:1200px;margin:0 auto}
+.ey{font-family:'Oswald',sans-serif;font-size:0.7rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--blue);margin-bottom:10px}
+.sh{font-family:'Oswald',sans-serif;font-size:clamp(2rem,4.2vw,3rem);font-weight:700;color:var(--navy);margin-bottom:16px;line-height:1.03}
+.sh .acc{color:var(--orange)}
+.sub{font-size:1rem;line-height:1.74;color:var(--slate);max-width:520px;margin-bottom:48px}
+/* INTRO SPLIT */
+.intro-split{background:var(--white);padding:0}
+.intro-wrap{display:grid;grid-template-columns:1fr}
+@media(min-width:768px){.intro-wrap{grid-template-columns:1fr 1fr}}
+.intro-img{width:100%;height:400px;object-fit:cover;display:block}
+@media(min-width:768px){.intro-img{height:100%;min-height:440px}}
+.intro-content{padding:56px 44px;display:flex;flex-direction:column;justify-content:center;background:var(--navy)}
+.intro-content p{font-size:0.95rem;line-height:1.78;color:rgba(255,255,255,0.62);margin-bottom:20px}
+.intro-stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:8px}
+.is-n{font-family:'Oswald',sans-serif;font-size:2rem;font-weight:700;color:var(--orange)}
+.is-l{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.38);margin-top:2px}
+/* SERVICES */
+.services-section{background:var(--off-white)}
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.svc-card{background:var(--white);border-radius:10px;overflow:hidden;border:1px solid #E2E8F0;transition:transform 0.22s,box-shadow 0.22s}
+.svc-card:hover{transform:translateY(-5px);box-shadow:0 14px 36px rgba(0,0,0,0.1)}
+.svc-card img{width:100%;height:190px;object-fit:cover;display:block}
+.svc-body{padding:22px}
+.svc-name{font-family:'Oswald',sans-serif;font-size:1.05rem;font-weight:600;color:var(--navy);margin-bottom:6px}
+.svc-desc{font-size:0.84rem;line-height:1.64;color:var(--slate);margin-bottom:12px}
+.svc-price{font-family:'Oswald',sans-serif;font-size:0.88rem;font-weight:700;color:var(--orange)}
+/* BEFORE AFTER */
+.ba-section{background:var(--navy);padding:80px 24px}
+.ba-inner{max-width:1000px;margin:0 auto}
+.ba-img-wrap{border-radius:12px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.5)}
+.ba-img-wrap img{width:100%;display:block;max-height:520px;object-fit:cover;object-position:center}
+.ba-labels{display:grid;grid-template-columns:1fr 1fr}
+.ba-lbl{padding:13px 20px;font-family:'Oswald',sans-serif;font-size:0.88rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;text-align:center}
+.ba-lbl.before{background:rgba(13,27,42,0.92);color:var(--white)}
+.ba-lbl.after{background:var(--orange);color:var(--white)}
+/* WHY US */
+.why-section{background:var(--white)}
+.why-layout{display:grid;grid-template-columns:1fr;gap:52px;align-items:center}
+@media(min-width:768px){.why-layout{grid-template-columns:1fr 1fr}}
+.why-img{width:100%;height:460px;object-fit:cover;border-radius:10px;display:block;box-shadow:0 12px 40px rgba(0,0,0,0.12)}
+.why-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.why-card{background:var(--off-white);border-radius:8px;padding:22px;border-left:3px solid var(--orange)}
+.why-n{font-family:'Oswald',sans-serif;font-size:1.6rem;font-weight:700;color:var(--orange);opacity:0.3;line-height:1;margin-bottom:7px}
+.why-t{font-family:'Oswald',sans-serif;font-size:0.95rem;font-weight:600;color:var(--navy);margin-bottom:6px}
+.why-tx{font-size:0.8rem;line-height:1.64;color:var(--slate)}
+/* EMERGENCY */
+.emerg-section{background:var(--navy);padding:0;overflow:hidden}
+.emerg-wrap{display:grid;grid-template-columns:1fr}
+@media(min-width:768px){.emerg-wrap{grid-template-columns:1fr 1fr}}
+.emerg-content{padding:68px 44px;display:flex;flex-direction:column;justify-content:center}
+.emerg-content p{font-size:0.95rem;line-height:1.78;color:rgba(255,255,255,0.62);margin-bottom:28px;max-width:420px}
+.btn-ol{background:var(--orange);color:var(--white);font-family:'Oswald',sans-serif;font-size:1.05rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:16px 34px;border-radius:5px;text-decoration:none;display:inline-block;transition:background 0.2s,transform 0.15s}
+.btn-ol:hover{background:var(--orange-dark);transform:translateY(-2px)}
+.emerg-img{width:100%;height:420px;object-fit:cover;display:block}
+@media(min-width:768px){.emerg-img{height:100%;min-height:460px}}
+/* PRICING */
+.pricing-section{background:var(--off-white)}
+.table-wrap{background:var(--white);border-radius:10px;overflow:hidden;border:1px solid #E2E8F0;box-shadow:0 2px 20px rgba(0,0,0,0.06);overflow-x:auto}
+.pt{width:100%;border-collapse:collapse;font-size:0.9rem}
+.pt th{font-family:'Oswald',sans-serif;font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--slate-light);padding:13px 20px;text-align:left;border-bottom:2px solid #CBD5E0;background:#F7FAFC}
+.pt td{padding:14px 20px;border-bottom:1px solid #EDF2F7;color:var(--navy)}
+.pt tr:last-child td{border-bottom:none}
+.pt tr:hover td{background:rgba(245,114,10,0.03)}
+.pc{font-weight:700;color:var(--orange);font-family:'Oswald',sans-serif;font-size:1rem;white-space:nowrap}
+.tn{font-size:0.78rem;color:var(--slate-light);margin-top:14px;text-align:center}
+/* REVIEWS */
+.reviews-section{background:var(--white)}
+.rv-top{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:40px}
+.big-r{font-family:'Oswald',sans-serif;font-size:3.8rem;font-weight:700;color:var(--navy);line-height:1}
+.stars{color:#F5A623;font-size:1.1rem;letter-spacing:2px}
+.rc{font-size:0.76rem;color:var(--slate-light);margin-top:2px}
+.rv-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
+.rv-card{background:var(--off-white);border-radius:8px;padding:22px;border-left:3px solid var(--orange)}
+.rv-stars{color:#F5A623;font-size:0.86rem;margin-bottom:10px;letter-spacing:2px}
+.rv-text{font-size:0.88rem;line-height:1.66;color:var(--slate);margin-bottom:14px;font-style:italic}
+.rv-author{font-family:'Oswald',sans-serif;font-size:0.84rem;font-weight:600;color:var(--navy)}
+.rv-date{font-size:0.72rem;color:var(--slate-light)}
+/* AREA */
+.area-section{background:var(--off-white)}
+.area-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media(min-width:540px){.area-grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:900px){.area-grid{grid-template-columns:repeat(4,1fr)}}
+.area-tag{background:var(--white);border:1px solid #E2E8F0;border-radius:6px;padding:11px 14px;font-size:0.84rem;color:var(--navy);display:flex;align-items:center;gap:7px;transition:border-color 0.2s}
+.area-tag:hover{border-color:var(--blue)}
+.ad{width:6px;height:6px;border-radius:50%;background:var(--blue);flex-shrink:0}
+/* CONTACT */
+.contact-section{background:var(--white)}
+.contact-grid{display:grid;grid-template-columns:1fr;gap:40px}
+@media(min-width:768px){.contact-grid{grid-template-columns:1fr 1fr}}
+.ci{display:flex;gap:14px;align-items:flex-start;margin-bottom:22px}
+.ci-ic{width:44px;height:44px;background:rgba(245,114,10,0.1);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.15rem;flex-shrink:0}
+.ci-l{font-family:'Oswald',sans-serif;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--slate-light);margin-bottom:2px}
+.ci-v{font-size:0.94rem;color:var(--navy);font-weight:500;text-decoration:none}
+a.ci-v:hover{color:var(--orange)}
+.fw{background:var(--off-white);border-radius:10px;padding:32px}
+.fw h3{font-family:'Oswald',sans-serif;font-size:1.15rem;font-weight:600;color:var(--navy);margin-bottom:20px}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+.fr.one{grid-template-columns:1fr}
+.fw input,.fw select,.fw textarea{width:100%;padding:11px 14px;border:1px solid #CBD5E0;border-radius:6px;font-family:'Inter',sans-serif;font-size:0.9rem;color:var(--navy);background:var(--white);outline:none;transition:border-color 0.2s}
+.fw input:focus,.fw select:focus,.fw textarea:focus{border-color:var(--blue)}
+.fw textarea{resize:vertical;min-height:90px}
+.btn-form{width:100%;background:var(--orange);color:var(--white);font-family:'Oswald',sans-serif;font-size:1rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:14px;border:none;border-radius:6px;cursor:pointer;margin-top:12px;transition:background 0.2s}
+.btn-form:hover{background:var(--orange-dark)}
+/* CTA BAND */
+.cta-band{background:var(--orange);padding:64px 24px;text-align:center}
+.cta-band h2{font-family:'Oswald',sans-serif;font-size:clamp(2rem,4vw,2.9rem);font-weight:700;color:var(--white);margin-bottom:12px;line-height:1.1}
+.cta-band p{font-size:1rem;color:rgba(255,255,255,0.88);margin-bottom:28px;max-width:460px;margin-left:auto;margin-right:auto}
+.cta-btns{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+.btn-wh{background:var(--white);color:var(--orange);font-family:'Oswald',sans-serif;font-size:1rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:15px 34px;border-radius:5px;text-decoration:none;transition:transform 0.15s,box-shadow 0.15s}
+.btn-wh:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.18)}
+.btn-ow{background:transparent;color:var(--white);font-family:'Oswald',sans-serif;font-size:1rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:15px 34px;border-radius:5px;text-decoration:none;border:2px solid rgba(255,255,255,0.6);transition:all 0.2s}
+.btn-ow:hover{background:rgba(255,255,255,0.15);border-color:white}
+/* FOOTER */
+footer{background:var(--navy);padding:52px 24px 28px}
+.fi{max-width:1200px;margin:0 auto}
+.ft{display:grid;grid-template-columns:1fr;gap:32px;margin-bottom:40px}
+@media(min-width:600px){.ft{grid-template-columns:2fr 1fr 1fr}}
+.fb h3{font-family:'Oswald',sans-serif;font-size:1.3rem;font-weight:700;color:var(--white);margin-bottom:6px}
+.fb h3 span{color:var(--orange)}
+.fb p{font-size:0.82rem;color:rgba(255,255,255,0.4);margin-bottom:16px;line-height:1.66}
+.fc a{display:block;font-size:0.84rem;color:rgba(255,255,255,0.55);text-decoration:none;margin-bottom:7px;transition:color 0.2s}
+.fc a:hover{color:var(--orange)}
+.fc h4{font-family:'Oswald',sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.28);margin-bottom:14px}
+.fbb{border-top:1px solid rgba(255,255,255,0.08);padding-top:20px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px}
+.fbb p,.fbb a{font-size:0.75rem;color:rgba(255,255,255,0.26);text-decoration:none}
+.fbb a:hover{color:var(--orange)}
+@media(prefers-reduced-motion:reduce){.pl,.hc-dot,.bar-emg{animation:none}}
+</style>
+</head>
+<body>
+
+<header class="sticky-bar">
+  <div class="logo-sm">AXION <span>DRAIN CLEANING</span></div>
+  <div class="bar-right">
+    <span class="bar-emg">⚡ 24/7 Emergency</span>
+    <a href="tel:6726990401" class="btn-bar">📞 672-699-0401</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-ov"></div>
+  <div class="pipe-lines"><div class="pl"></div><div class="pl"></div><div class="pl"></div><div class="pl"></div></div>
+  <div class="hero-inner">
+    <div>
+      <p class="hero-eyebrow">Vancouver & Lower Mainland</p>
+      <h1 class="hero-h1">CLEAR<br>DRAINS.<br><span class="acc">BETTER</span><br>FLOW.</h1>
+      <p class="hero-sub">When drains back up, Axion responds fast — professional equipment, upfront pricing, and work that's done right the first time. No hidden fees, no shortcuts.</p>
+      <div class="hero-ctas">
+        <a href="tel:6726990401" class="btn-p">📞 Call or Text Now</a>
+        <a href="#services" class="btn-s">View Services & Pricing</a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="stn">5.0★</div><div class="stl">Google Rating</div></div>
+        <div><div class="stn">19+</div><div class="stl">Reviews</div></div>
+        <div><div class="stn">24/7</div><div class="stl">Emergency</div></div>
+      </div>
+    </div>
+    <div>
+      <div class="hero-card">
+        <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3Ehhy1xNiVdv0yglQJ2f6cyCQrL/hf_20260610_064524_595e91c0-ed7f-4439-bfa4-bb774041cf41.png" alt="Axion service vehicle at Vancouver home" loading="eager">
+        <div class="hcb">
+          <div class="hc-badge"><span class="hc-dot"></span>Dispatching Now</div>
+          <h3>Ready to Respond Across Greater Vancouver</h3>
+          <div class="hc-list">
+            <div class="hc-item"><span class="hc-d"></span>Drain Cleaning from $139</div>
+            <div class="hc-item"><span class="hc-d"></span>Camera Inspections from $89</div>
+            <div class="hc-item"><span class="hc-d"></span>Hydro Jetting from $219</div>
+            <div class="hc-item"><span class="hc-d"></span>Mainline Sewer Cleaning from $199</div>
+            <div class="hc-item"><span class="hc-d"></span>Emergency Service — 24/7</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="ti">⚡ Fast Response</div>
+    <div class="ti">✅ Honest Pricing</div>
+    <div class="ti">🏆 Quality Work</div>
+    <div class="ti">👍 100% Satisfaction</div>
+    <div class="ti">🔒 No Hidden Fees</div>
+  </div>
+</div>
+
+<div class="intro-split">
+  <div class="intro-wrap">
+    <img class="intro-img" src="https://d8j0ntlcm91z4.cloudfront.net/user_3Ehhy1xNiVdv0yglQJ2f6cyCQrL/hf_20260610_061527_d9db7a9a-c922-41b4-86ec-6d0fbf993071.png" alt="Axion technician explaining service to homeowner">
+    <div class="intro-content">
+      <p class="ey" style="color:var(--blue)">About Axion</p>
+      <h2 class="sh" style="color:var(--white)">We Show Up. We Fix It. <span class="acc">Done.</span></h2>
+      <p>Axion Drain Cleaning was built on one principle: do the job properly the first time. We're fast, we communicate clearly, and we never surprise you with a bill that doesn't match the quote.</p>
+      <p>Based in Surrey, we serve all of Greater Vancouver — residential and commercial — with professional-grade equipment and a team that genuinely cares.</p>
+      <div class="intro-stats">
+        <div><div class="is-n">5.0★</div><div class="is-l">Google Rating</div></div>
+        <div><div class="is-n">24/7</div><div class="is-l">Available</div></div>
+        <div><div class="is-n">$0</div><div class="is-l">Hidden Fees</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="services-section" id="services">
+  <div class="si">
+    <p class="ey">What We Do</p>
+    <h2 class="sh">Every Drain Problem, <span class="acc">Solved.</span></h2>
+    <p class="sub">From a slow kitchen sink to a full sewer backup — Axion has the tools and expertise to fix it fast and right.</p>
+    <div class="svc-grid">
+      <div class="svc-card">
+        <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3Ehhy1xNiVdv0yglQJ2f6cyCQrL/hf_20260610_064519_c4413dfc-52ea-4fbb-b2f4-187b3a42c71c.png" alt="Professional drain cleaning">
+        <div class="svc-body"><div class="svc-name">Drain Cleaning</div><div class="svc-desc">Sinks, tubs, showers, and floor drains cleared thoroughly with professional-grade equipment.</div><div class="svc-price">From $139</div></div>
+      </div>
+      <div class="svc-card">
+        <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3Ehhy1xNiVdv0yglQJ2f6cyCQrL/hf_20260610_062339_33330bda-236f-454f-86d7-1b7f25de0e53.png" alt="Camera drain inspection">
+        <div class="svc-body"><div class="svc-name">Camera Inspections</div><div class="svc-desc">See exactly what's inside your pipes before we start — no guesswork, no unnecessary work.</div><div class="svc-price">From $89</div></div>
+      </div>
+      <div class="svc-card">
+        <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3Ehhy1xNiVdv0yglQJ2f6cyCQrL/hf_20260610_062813_e0f62a55-fa9d-4e42-8844-64ffac5ddafa.png" alt="Hydro jetting service">
+        <div class="svc-body"><div class="svc-name">Hydro Jetting</div><div class="svc-desc">High-pressure water blasts through grease, roots, and years of buildup — deep clean guaranteed.</div><div class="svc-price">From $219</div></div>
+      </div>
+      <div class="svc-card">
+        <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3Ehhy1xNiVdv0yglQJ2f6cyCQrL/hf_20260610_061511_fd25dfe0-35ab-446a-99fa-627ed87089cf.png" alt="Mainline sewer cleaning">
+        <div class="svc-body"><div class="svc-name">Mainline Sewer Cleaning</div><div class="svc-desc">Clogs, backups, and slow mains cleared with power auger and professional hydro equipment.</div><div class="svc-price">From $199</div></div>
+      </div>
+      <div class="svc-card">
+        <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3Ehhy1xNiVdv0yglQJ2f6cyCQrL/hf_20260610_064508_8ecf331f-5961-4189-a38c-a5e02f396810.png" alt="Floor and bathtub drains">
+        <div class="svc-body"><div class="svc-name">Floor & Bathtub Drains</div><div class="svc-desc">Hair clogs, soap buildup, and slow bathroom drains cleared quickly and cleanly every time.</div><div class="svc-price">From $129</div></div>
+      </div>
+      <div class="svc-card">
+        <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3Ehhy1xNiVdv0yglQJ2f6cyCQrL/hf_20260610_062348_09e83b8e-c8c3-41c1-ac34-a66a76b3156d.png" alt="Residential and commercial drain service">
+        <div class="svc-body"><div class="svc-name">Residential & Commercial</div><div class="svc-desc">Homeowners, landlords, restaurants, businesses — every job gets the same professional standard.</div><div class="svc-price">From $139</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ba-section">
+  <div class="ba-inner">
+    <p class="ey" style="color:rgba(27,154,170,0.85);text-align:center">Real Results</p>
+    <h2 class="sh" style="color:var(--white);text-align:center;margin-bottom:36px">The <span class="acc">Axion</span> Difference</h2>
+    <div class="ba-img-wrap">
+      <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3Ehhy1xNiVdv0yglQJ2f6cyCQrL/hf_20260610_225855_8a473853-939a-48d3-ae4e-365c7e997d0d.png" alt="Before and after drain repair by Axion Drain Cleaning">
+      <div class="ba-labels">
+        <div class="ba-lbl before">⬅ Before</div>
+        <div class="ba-lbl after">After ➡</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why-section">
+  <div class="si">
+    <p class="ey">Why Choose Axion</p>
+    <h2 class="sh">Built on <span class="acc">Accountability.</span></h2>
+    <div class="why-layout">
+      <img class="why-img" src="https://d8j0ntlcm91z4.cloudfront.net/user_3Ehhy1xNiVdv0yglQJ2f6cyCQrL/hf_20260610_064514_9db850f8-97d8-4a65-a951-1e0b0ff6f55f.png" alt="Satisfied homeowner with Axion technician">
+      <div>
+        <p class="sub" style="margin-bottom:28px">We're not the cheapest option — we're the ones who show up on time, explain every step, and stand behind the work completely.</p>
+        <div class="why-cards">
+          <div class="why-card"><div class="why-n">01</div><div class="why-t">Fast Response</div><div class="why-tx">We dispatch quickly. When you need us most, we're already on the way — not booking you in for next week.</div></div>
+          <div class="why-card"><div class="why-n">02</div><div class="why-t">Honest Pricing</div><div class="why-tx">You get a quote before we touch anything. No surprises on the final bill. Ever.</div></div>
+          <div class="why-card"><div class="why-n">03</div><div class="why-t">Done Right</div><div class="why-tx">We diagnose properly first — so problems stay fixed and don't come back a week later.</div></div>
+          <div class="why-card"><div class="why-n">04</div><div class="why-t">Pro Equipment</div><div class="why-tx">Camera inspection, hydro jetting, power auger — we bring the right tool every single time.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="emerg-section">
+  <div class="emerg-wrap">
+    <div class="emerg-content">
+      <p class="ey" style="color:var(--blue)">24/7 Emergency Service</p>
+      <h2 class="sh" style="color:var(--white)">Drain Emergency<br>at 2am? <span class="acc">We Answer.</span></h2>
+      <p>Sewage backups, flooded basements, blocked toilets — drainage emergencies don't wait for business hours. Neither do we. Call or text any time and we'll have someone to you fast.</p>
+      <a href="tel:6726990401" class="btn-ol">📞 Call Now — (672) 699-0401</a>
+    </div>
+    <img class="emerg-img" src="https://d8j0ntlcm91z4.cloudfront.net/user_3Ehhy1xNiVdv0yglQJ2f6cyCQrL/hf_20260610_062356_38962c57-b16d-4d9f-8af2-81c5336c5ae2.png" alt="Axion emergency drain service at night">
+  </div>
+</div>
+
+<section class="pricing-section" id="pricing">
+  <div class="si">
+    <p class="ey">Transparent Pricing</p>
+    <h2 class="sh">No Surprises. <span class="acc">Ever.</span></h2>
+    <p class="sub">All prices are starting rates. We quote before we work — so you always know exactly what you're paying.</p>
+    <div class="table-wrap">
+      <table class="pt">
+        <thead><tr><th>Service</th><th>Starting Price</th></tr></thead>
+        <tbody>
+          <tr><td>Drain Cleaning (sink, tub, shower, floor)</td><td class="pc">$139</td></tr>
+          <tr><td>Toilet Drain Unclogging</td><td class="pc">$129</td></tr>
+          <tr><td>Kitchen Sink Drain Cleaning</td><td class="pc">$149</td></tr>
+          <tr><td>Sewer Drain Cleaning</td><td class="pc">$169</td></tr>
+          <tr><td>Main Sewer Line Cleaning</td><td class="pc">$199</td></tr>
+          <tr><td>Emergency Drain Cleaning</td><td class="pc">$199</td></tr>
+          <tr><td>Emergency Sewer Service</td><td class="pc">$199</td></tr>
+          <tr><td>Sewer Backup Clearing</td><td class="pc">$249</td></tr>
+          <tr><td>Hydro Jetting Service</td><td class="pc">$219</td></tr>
+          <tr><td>Storm Drain Cleaning</td><td class="pc">$219</td></tr>
+          <tr><td>Grease Blockage Removal</td><td class="pc">$219</td></tr>
+          <tr><td>Root Intrusion Removal</td><td class="pc">$219</td></tr>
+          <tr><td>Commercial Drain Cleaning</td><td class="pc">$219</td></tr>
+          <tr><td>Power Auger Drain Cleaning</td><td class="pc">$169</td></tr>
+          <tr><td>Camera Drain Inspection</td><td class="pc">$89</td></tr>
+          <tr><td>Sewer Line Inspection</td><td class="pc">$89</td></tr>
+          <tr><td>Drain Odor Diagnosis</td><td class="pc">$99</td></tr>
+          <tr><td>Exterior Drain Cleaning</td><td class="pc">$199</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tn">All prices in CAD · Final price quoted on-site before work begins · No hidden fees — ever.</p>
+  </div>
+</section>
+
+<section class="reviews-section" id="reviews">
+  <div class="si">
+    <div class="rv-top">
+      <div><p class="ey">What Customers Say</p><h2 class="sh" style="margin-bottom:0">Google Reviews</h2></div>
+      <div style="display:flex;align-items:center;gap:14px">
+        <div class="big-r">5.0</div>
+        <div><div class="stars">★★★★★</div><div class="rc">19 reviews · Google</div></div>
+      </div>
+    </div>
+    <div class="rv-grid">
+      <div class="rv-card"><div class="rv-stars">★★★★★</div><p class="rv-text">"Had a drain issue and contacted Axion. They responded quickly, arrived on time, and clearly explained what needed to be done. Exceptional service."</p><div class="rv-author">Hasindu Dasanayaka</div><div class="rv-date">1 day ago</div></div>
+      <div class="rv-card"><div class="rv-stars">★★★★★</div><p class="rv-text">"I had a great experience with Axion Drain Cleaning. The team was professional, punctual, and efficient. Would absolutely recommend to anyone."</p><div class="rv-author">Durangi Navanjana</div><div class="rv-date">1 day ago</div></div>
+      <div class="rv-card"><div class="rv-stars">★★★★★</div><p class="rv-text">"Axion provided excellent service! Responded quickly, arrived on time, and completed the job professionally. The team was friendly and incredibly thorough."</p><div class="rv-author">D G</div><div class="rv-date">1 day ago</div></div>
+      <div class="rv-card"><div class="rv-stars">★★★★★</div><p class="rv-text">"Excellent experience with Axion. Arrived on time, professional, and explained everything clearly before starting. The quality of work was outstanding."</p><div class="rv-author">Ilmi Madara</div><div class="rv-date">3 days ago</div></div>
+      <div class="rv-card"><div class="rv-stars">★★★★★</div><p class="rv-text">"Axion was amazing — hired them to clean our mainline sewer. Much quicker response than two other plumbers we tried. Very professional, would use again."</p><div class="rv-author">Simran Benipal</div><div class="rv-date">3 days ago</div></div>
+      <div class="rv-card"><div class="rv-stars">★★★★★</div><p class="rv-text">"Toilet and shower were backing up — Ramy quickly identified the main sewer line issue. Problem cleared within an hour. Highly recommend Axion!"</p><div class="rv-author">T Ethan</div><div class="rv-date">2 weeks ago</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="area-section">
+  <div class="si">
+    <p class="ey">Where We Work</p>
+    <h2 class="sh">Serving <span class="acc">Greater Vancouver</span></h2>
+    <p class="sub">We cover the whole Lower Mainland — residential and commercial. Not sure if we reach your area? Just call.</p>
+    <div class="area-grid">
+      <div class="area-tag"><span class="ad"></span>Vancouver</div>
+      <div class="area-tag"><span class="ad"></span>Surrey</div>
+      <div class="area-tag"><span class="ad"></span>Burnaby</div>
+      <div class="area-tag"><span class="ad"></span>Richmond</div>
+      <div class="area-tag"><span class="ad"></span>Coquitlam</div>
+      <div class="area-tag"><span class="ad"></span>Langley</div>
+      <div class="area-tag"><span class="ad"></span>Delta</div>
+      <div class="area-tag"><span class="ad"></span>Maple Ridge</div>
+      <div class="area-tag"><span class="ad"></span>North Vancouver</div>
+      <div class="area-tag"><span class="ad"></span>West Vancouver</div>
+      <div class="area-tag"><span class="ad"></span>New Westminster</div>
+      <div class="area-tag"><span class="ad"></span>Abbotsford</div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-section" id="contact">
+  <div class="si">
+    <p class="ey">Get In Touch</p>
+    <h2 class="sh">Ready to Fix <span class="acc">Your Drain?</span></h2>
+    <div class="contact-grid">
+      <div>
+        <div class="ci"><div class="ci-ic">📞</div><div><div class="ci-l">Phone / Text</div><a href="tel:6726990401" class="ci-v">(672) 699-0401</a></div></div>
+        <div class="ci"><div class="ci-ic">✉️</div><div><div class="ci-l">Email</div><a href="mailto:info@axiondrain.ca" class="ci-v">info@axiondrain.ca</a></div></div>
+        <div class="ci"><div class="ci-ic">🌐</div><div><div class="ci-l">Website</div><span class="ci-v">axiondrain.ca</span></div></div>
+        <div class="ci"><div class="ci-ic">📍</div><div><div class="ci-l">Office</div><span class="ci-v">10688 140 St Unit 213, Surrey, BC V3T 0M6</span></div></div>
+        <div class="ci"><div class="ci-ic">🕐</div><div><div class="ci-l">Hours</div><span class="ci-v">Open 24 Hours · 7 Days a Week</span></div></div>
+      </div>
+      <div class="fw">
+        <h3>Request a Service Call</h3>
+        <div class="fr"><input type="text" placeholder="Your Name"><input type="tel" placeholder="Phone Number"></div>
+        <div class="fr one"><input type="email" placeholder="Email Address"></div>
+        <div class="fr one"><select><option value="" disabled selected>Select Service</option><option>Drain Cleaning</option><option>Camera Inspection</option><option>Hydro Jetting</option><option>Mainline Sewer Cleaning</option><option>Emergency Service</option><option>Other</option></select></div>
+        <div class="fr one"><textarea placeholder="Describe the problem..."></textarea></div>
+        <button class="btn-form" onclick="alert('Thank you! We\'ll be in touch shortly. For urgent issues call (672) 699-0401 directly.')">Send Request</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2>Drain Backed Up Right Now?</h2>
+  <p>Same-day service across Vancouver & the Lower Mainland. Call or text — we pick up.</p>
+  <div class="cta-btns">
+    <a href="tel:6726990401" class="btn-wh">📞 Call (672) 699-0401</a>
+    <a href="sms:6726990401" class="btn-ow">💬 Send a Text</a>
+  </div>
+</div>
+
+<footer>
+  <div class="fi">
+    <div class="ft">
+      <div class="fb">
+        <h3>AXION <span>DRAIN CLEANING</span></h3>
+        <p>Clear Drains. Better Flow. Professional drain cleaning across Vancouver & the Lower Mainland. Fast, honest, and done right the first time.</p>
+        <div class="fc">
+          <a href="tel:6726990401">📞 (672) 699-0401</a>
+          <a href="mailto:info@axiondrain.ca">✉️ info@axiondrain.ca</a>
+          <a href="#">🌐 axiondrain.ca</a>
+        </div>
+      </div>
+      <div class="fc">
+        <h4>Services</h4>
+        <a href="#services">Drain Cleaning</a>
+        <a href="#services">Camera Inspections</a>
+        <a href="#services">Hydro Jetting</a>
+        <a href="#services">Sewer Line Cleaning</a>
+        <a href="#services">Emergency Service</a>
+        <a href="#services">Commercial Drains</a>
+      </div>
+      <div class="fc">
+        <h4>Company</h4>
+        <a href="#reviews">Reviews</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact Us</a>
+        <a href="tel:6726990401">24/7 Emergency Line</a>
+      </div>
+    </div>
+    <div class="fbb">
+      <p>© 2025 Axion Drain Cleaning · Surrey, BC · All rights reserved.</p>
+      <a href="tel:6726990401">(672) 699-0401</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
